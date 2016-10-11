@@ -29,10 +29,10 @@ html, body {
     top: 15%;
     width: 400px;
     margin: 0 auto;
-    padding-bottom: 20px;
+    padding: 30px;
     color: #FFFFFF;
     background: #424242;
-    box-shadow:20px -15px 20px 5px rgba(0, 0, 0, .2);
+    box-shadow: 20px -15px 20px 5px rgba(0, 0, 0, .2);
     border-radius: 5px;
 }
 
@@ -40,22 +40,14 @@ html, body {
     margin: 0;
 }
 
-.input-field input[type=text]:focus {
-    border-bottom: 1px solid #26a69a;
-    box-shadow: 0 1px 0 0 #26a69a;
-}
-.input-field input[type=password]:focus {
-    border-bottom: 1px solid #26a69a;
-    box-shadow: 0 1px 0 0 #26a69a;
-}
-.input-field label {
-    color: #FFFFFF;
+.input-field button[type=submit] {
+    background-color: rgb(139, 195, 74);
 }
 
-.clearfix:after {
-    content: "."; /* добавить содержимое: "." */
-    display: block; /* сделать блоком, т.к. inline не может иметь clear */
-    clear: both; /* с обеих сторон clear */
-    visibility: hidden; /* сделать невидимым, зачем нам точка внизу? */
-    height: 0; /* сделать высоту 0, чтобы не занимал место */
+.input-field button[type=submit]:focus {
+    background-color: rgba(139, 195, 74, .8);
+}
+
+.btn:hover {
+    background-color: rgb(152, 195, 104);
 }
